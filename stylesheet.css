@@ -153,25 +153,28 @@ p { line-height: normal; }
 }
 
 .ai-amio-dialog {
-  width: min(90vw, 720px);
-  max-height: 90vh;
-  padding: 0;
+  width: 25vw;
+  min-width: 320px;
+  max-width: 420px;
+  max-height: 70vh;
+  padding: 12px;
   overflow: hidden;
-  border: 0;
-  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, .16);
+  border-radius: 7px;
   background: #fff;
   box-shadow: 0 20px 60px rgba(0, 0, 0, .4);
 }
 
 .ai-amio-dialog::backdrop {
-  background: rgba(0, 0, 0, .68);
-  backdrop-filter: blur(2px);
+  background: rgba(0, 0, 0, .56);
+  backdrop-filter: blur(3px);
 }
 
 .ai-amio-dialog img {
   display: block;
   width: 100%;
-  max-height: 86vh;
+  max-height: 64vh;
+  border-radius: 4px;
   object-fit: contain;
 }
 
@@ -318,4 +321,5 @@ p { line-height: normal; }
   .additional-label-cell { width: 34%; padding: 10px; }
   .additional-copy { width: 66%; padding: 10px; }
   .additional-label { min-height: 64px; padding: 8px; font-size: 16px; }
+  .ai-amio-dialog { width: 82vw; min-width: 0; max-width: 360px; }
 }
