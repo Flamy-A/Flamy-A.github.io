@@ -1,0 +1,95 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[margin=0.7in]{geometry}
+\usepackage{hyperref,tabularx,xcolor}
+\definecolor{deepblue}{RGB}{0,50,105}
+\hypersetup{colorlinks=true,urlcolor=deepblue}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{2pt}
+\makeatletter
+\renewcommand\section{\@startsection{section}{1}{0pt}{8pt}{3pt}{\large\bfseries\color{deepblue}}}
+\makeatother
+\setlength{\itemsep}{1pt}
+
+\newcommand{\role}[4]{%
+  \textbf{#1}\hfill\textbf{#3}\\
+  \textit{#2}\hfill\textit{#4}\vspace{-2pt}}
+
+\begin{document}
+\begin{center}
+  {\LARGE\bfseries Amio Rashid}\\[3pt]
+  \href{mailto:rashidamio121@gmail.com}{rashidamio121@gmail.com}\quad $\vert$ \quad
+  \href{https://github.com/Flamy-A}{GitHub}\quad $\vert$ \quad
+  \href{https://www.linkedin.com/in/amio-rashid-0808b52b8/}{LinkedIn}\quad $\vert$ \quad
+  \href{https://amio-portfolio.vercel.app/}{Portfolio}
+\end{center}
+
+\section*{Education}
+\textbf{B.Sc. in Computer Science and Engineering}\hfill University of Dhaka
+
+\section*{Experience}
+\role{Software Engineering Intern}{Ohkuchi Electronics}{February 2026}{Kagoshima, Japan}
+\begin{itemize}
+  \item Contributed to industrial automation and AI-based vision system development.
+  \item Collaborated with hardware and systems teams to test the solution on factory devices and field samples.
+\end{itemize}
+
+\role{Python AI Trainer}{SuperAnnotate}{Oct 2024--Present}{Remote}
+\begin{itemize}
+  \item Build and refine AI training data, evaluate model outputs, and provide feedback to improve model performance.
+\end{itemize}
+
+\role{Database Architect}{Department of CSE, University of Dhaka}{Jan--Dec 2025}{Dhaka}
+\begin{itemize}
+  \item Designed a normalized PostgreSQL database, developed advanced SQL queries, and integrated backend services with a Next.js frontend for academic and financial operations.
+\end{itemize}
+
+\role{Bangla AI Trainer \& QA}{Scale AI}{Jan--Aug 2024}{Remote}
+\begin{itemize}
+  \item Created and refined Bangla training data, evaluated AI responses, and supported quality assurance and RLHF workflows.
+\end{itemize}
+
+\section*{Technical Skills}
+\begin{tabularx}{\textwidth}{@{}>{\bfseries}l X@{}}
+Frontend & React, Next.js, JavaScript \\
+Backend \& Data & Node.js, Spring Boot, FastAPI, Java, Python, SQL, MySQL, SQLite, PostgreSQL, Oracle \\
+Agentic AI & Workflow automation, LLM integration, prompt engineering, RAG, chatbot development, Hugging Face, OpenAI API, Ollama \\
+DevOps \& Tools & Docker, Git, GitHub, Linux, Nginx, VS Code, IntelliJ, LaTeX
+\end{tabularx}
+
+\section*{Research}
+\textbf{Green AI and Federated Learning} --- Studying the energy demands of large-scale AI and exploring distributed learning approaches that reduce training cost and carbon footprint.
+
+\section*{Selected Projects}
+\textbf{DrawSync -- Multiplayer Drawing Game} \hfill \href{https://github.com/Walid2851/DrawSync}{GitHub}
+\begin{itemize}
+  \item Built a real-time drawing game with rooms, scoring, live chat, and a hybrid REST, TCP socket, and WebSocket architecture.
+  \item \textbf{Tech:} FastAPI, Python sockets, WebSockets, React, SQLAlchemy, Redis.
+\end{itemize}
+
+\textbf{AI-Assisted Student Helper} \hfill \href{https://github.com/fayek2025/AI-Assisted-Student-Helper}{GitHub}
+\begin{itemize}
+  \item Combined PDF processing, semantic search, conversational Q\&A, and flashcard creation in an AI-driven study companion.
+  \item \textbf{Tech:} FastAPI, Python, MongoDB, Supabase, LLMs.
+\end{itemize}
+
+\textbf{PMICS Administration Management System} \hfill \href{https://github.com/Flamy-A/FinMan}{GitHub}
+\begin{itemize}
+  \item Built an academic and financial administration platform for student, batch, and institutional operations.
+  \item \textbf{Tech:} PostgreSQL, SQL, Next.js, Supabase.
+\end{itemize}
+
+\textbf{Cafe Shop Management System} \hfill \href{https://github.com/Flamy-A/Cafe-Management-System}{GitHub}
+\begin{itemize}
+  \item Developed a modular desktop application for orders, employees, billing, inventory, and reporting.
+  \item \textbf{Tech:} Java, JavaFX, JDBC, FXML.
+\end{itemize}
+
+\textbf{Minesweeper with Treasure Hunt} \hfill \href{https://github.com/TanzilaKhan1/Project_minesweeper_with_treasure_hunt}{GitHub}
+\begin{itemize}
+  \item Created a C++/Qt Minesweeper game with multiple difficulty levels, story mode, flagging logic, and timers.
+\end{itemize}
+
+\section*{Languages}
+Bengali, English, Japanese (JLPT N5; basic conversation)
+\end{document}

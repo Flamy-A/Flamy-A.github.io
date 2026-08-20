@@ -1,0 +1,251 @@
+/* Lato — matching the Jon Barron / Metalicana template */
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Lato Italic'), local('Lato-Italic'), url(https://fonts.gstatic.com/s/lato/v15/S6u8w4BMUTPHjxsAXC-qNiXg7Q.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://fonts.gstatic.com/s/lato/v15/S6u_w4BMUTPHjxsI5wq_Gwftx9897g.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v15/S6uyw4BMUTPHjx4wXiWtFCc.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v15/S6u9w4BMUTPHh6UVSwiPGQ3q5d0.woff2) format('woff2');
+}
+
+* { box-sizing: border-box; }
+
+a {
+  color: #1772d0;
+  text-decoration: none;
+}
+
+a:focus,
+a:hover {
+  color: #f09228;
+  text-decoration: none;
+}
+
+body,
+td,
+th,
+tr,
+p,
+a {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+body {
+  margin: 8px;
+  color: #000;
+  background: #fff;
+}
+
+strong,
+b {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+h2 {
+  margin: 0;
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 22px;
+  font-weight: normal;
+}
+
+p { line-height: normal; }
+
+.papertitle {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 1.1em;
+  font-weight: 700;
+}
+
+.name {
+  margin: 0;
+  padding-top: 20px;
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 32px;
+  text-align: center;
+}
+
+.site-table {
+  width: 100%;
+  max-width: 800px;
+  margin-right: auto;
+  margin-left: auto;
+  border: 0;
+  border-spacing: 0;
+  border-collapse: separate;
+}
+
+.site-cell { padding: 0; }
+
+.content-table {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  border: 0;
+  border-spacing: 0;
+  border-collapse: separate;
+}
+
+.intro-copy {
+  width: 63%;
+  padding: 2.5%;
+  vertical-align: middle;
+}
+
+.intro-photo {
+  width: 37%;
+  max-width: 37%;
+  padding: 2.5%;
+}
+
+.intro-photo a {
+  display: block;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+}
+
+.profile-photo {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  border-radius: 0;
+  object-fit: cover;
+  object-position: center;
+}
+
+.link-row { text-align: center; }
+
+.social-icon {
+  width: 14px;
+  height: 14px;
+  margin-right: 4px;
+  vertical-align: -2px;
+  fill: currentColor;
+}
+
+.section-copy {
+  width: 100%;
+  padding: 16px;
+  vertical-align: middle;
+}
+
+.section-title {
+  width: 100%;
+  margin: 0 auto;
+  padding: 16px;
+  border: 0;
+  border-spacing: 0;
+}
+
+.logo-cell {
+  width: 20%;
+  padding: 16px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.colored-box {
+  display: inline-block;
+  padding: 20px;
+  border-radius: 10px;
+  color: #000;
+}
+
+.education-logo { padding: 8px 24px; }
+.education-logo img { display: block; width: 100%; max-height: 150px; object-fit: contain; }
+.education-copy { padding: 16px; }
+.university-name { font-size: 25px; }
+.degree { font-size: 15px; }
+
+.project-table { border-spacing: 0; }
+.project-table tr { transition: background-color .15s ease-in-out; }
+.project-table tr:not(.highlight-row):hover { background: #fafafa; }
+.highlight-row { background: #ffffd0; }
+
+.project-copy {
+  width: 100%;
+  padding: 16px;
+  vertical-align: middle;
+}
+
+.project-copy p { margin: 10px 0; }
+
+.experience-table tr { vertical-align: middle; }
+.work-mark-cell { width: 20%; padding: 16px; text-align: center; }
+.work-copy { width: 80%; padding: 16px; }
+.work-copy p { margin-bottom: 0; }
+
+.work-logo {
+  display: block;
+  width: 110px;
+  height: 110px;
+  margin: auto;
+  object-fit: contain;
+}
+
+.additional-table tr { vertical-align: middle; }
+.additional-label-cell { width: 28%; padding: 16px; text-align: center; }
+.additional-copy { width: 72%; padding: 16px; }
+.additional-copy p { margin-bottom: 0; }
+
+.additional-label {
+  display: grid;
+  min-height: 76px;
+  padding: 14px;
+  place-items: center;
+  border-radius: 10px;
+  color: #111;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.founder-label { background: #d9cff7; }
+.workshop-label { background: #fcb97d; }
+
+.footer-cell {
+  padding: 0;
+  text-align: center;
+}
+
+.footer-cell p {
+  margin: 5px 0;
+  color: gray;
+  font-size: 10px;
+}
+
+.footer-cell a { font-size: 10px; }
+
+@media (max-width: 600px) {
+  body { margin: 0; }
+  .intro-copy,
+  .intro-photo { display: block; width: 100%; max-width: 100%; padding: 16px; }
+  .intro-photo { text-align: center; }
+  .intro-photo a { max-width: 260px; margin: auto; }
+  .project-copy { padding: 10px 16px; }
+  .logo-cell { width: 32%; padding: 10px; }
+  .education-copy { padding: 10px; }
+  .university-name { font-size: 21px; }
+  .work-mark-cell { width: 28%; padding: 10px; }
+  .work-copy { width: 72%; padding: 10px; }
+  .work-logo { width: 82px; height: 82px; }
+  .additional-label-cell { width: 34%; padding: 10px; }
+  .additional-copy { width: 66%; padding: 10px; }
+  .additional-label { min-height: 64px; padding: 8px; font-size: 16px; }
+}
