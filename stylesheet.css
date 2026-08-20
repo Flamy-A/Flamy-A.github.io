@@ -117,17 +117,16 @@ p { line-height: normal; }
 
 .intro-photo .profile-link {
   display: block;
-  aspect-ratio: 1 / 1;
-  overflow: hidden;
+  width: 100%;
+  line-height: 0;
 }
 
 .profile-photo {
+  display: block;
   width: 100%;
-  height: 100%;
+  height: auto;
   max-width: 100%;
   border-radius: 0;
-  object-fit: cover;
-  object-position: center;
 }
 
 .ai-amio-link {
