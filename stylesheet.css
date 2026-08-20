@@ -307,6 +307,10 @@ p { line-height: normal; }
 
 @media (max-width: 600px) {
   body { margin: 0; }
+  .intro-copy,
+  .intro-photo { display: block; width: 100%; max-width: 100%; padding: 16px; }
+  .intro-photo { text-align: center; }
+  .intro-photo .profile-link { max-width: 260px; margin: auto; }
   .project-copy { padding: 10px 16px; }
   .logo-cell { width: 32%; padding: 10px; }
   .education-copy { padding: 10px; }
