@@ -49,7 +49,7 @@
                 </td>
                 <td class="intro-photo">
                   <a class="profile-link" href="images/amio.jpg"><img class="profile-photo" src="images/amio-profile.jpg" alt="Amio Rashid"></a>
-                  <p class="ai-amio-link"><a href="images/Github_Catto-full.png" target="_blank" rel="noreferrer">Click AI-Amio, See AI-Amio</a></p>
+                  <p class="ai-amio-link"><button type="button" id="ai-amio-trigger">Click AI-Amio, See AI-Amio</button></p>
                 </td>
               </tr>
             </tbody>
@@ -257,6 +257,23 @@
       </tr>
     </tbody>
   </table>
+
+  <dialog class="ai-amio-dialog" id="ai-amio-dialog" aria-label="AI-Amio">
+    <button class="dialog-close" type="button" aria-label="Close AI-Amio popup">&times;</button>
+    <img src="images/Github_Catto-full.png" alt="AI-Amio, a cartoon cat using a laptop">
+  </dialog>
+
+  <script>
+    const aiAmioDialog = document.getElementById('ai-amio-dialog');
+    const aiAmioTrigger = document.getElementById('ai-amio-trigger');
+    const aiAmioClose = aiAmioDialog.querySelector('.dialog-close');
+
+    aiAmioTrigger.addEventListener('click', () => aiAmioDialog.showModal());
+    aiAmioClose.addEventListener('click', () => aiAmioDialog.close());
+    aiAmioDialog.addEventListener('click', (event) => {
+      if (event.target === aiAmioDialog) aiAmioDialog.close();
+    });
+  </script>
 </body>
 
 </html>

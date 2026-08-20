@@ -135,9 +135,69 @@ p { line-height: normal; }
   text-align: center;
 }
 
-.ai-amio-link a {
+.ai-amio-link button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  color: #1772d0;
+  background: transparent;
+  cursor: pointer;
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 13px;
   font-weight: 700;
+}
+
+.ai-amio-link button:hover,
+.ai-amio-link button:focus-visible {
+  color: #f09228;
+}
+
+.ai-amio-dialog {
+  width: min(90vw, 720px);
+  max-height: 90vh;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, .4);
+}
+
+.ai-amio-dialog::backdrop {
+  background: rgba(0, 0, 0, .68);
+  backdrop-filter: blur(2px);
+}
+
+.ai-amio-dialog img {
+  display: block;
+  width: 100%;
+  max-height: 86vh;
+  object-fit: contain;
+}
+
+.dialog-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 1;
+  display: grid;
+  width: 34px;
+  height: 34px;
+  padding: 0;
+  place-items: center;
+  border: 1px solid rgba(0, 0, 0, .18);
+  border-radius: 50%;
+  color: #222;
+  background: rgba(255, 255, 255, .9);
+  cursor: pointer;
+  font-size: 24px;
+  line-height: 1;
+}
+
+.dialog-close:hover,
+.dialog-close:focus-visible {
+  color: #fff;
+  background: #222;
 }
 
 .link-row { text-align: center; }
