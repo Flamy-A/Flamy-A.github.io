@@ -286,19 +286,6 @@ p { line-height: normal; }
   object-fit: contain;
 }
 
-.additional-label {
-  display: grid;
-  min-height: 76px;
-  padding: 14px;
-  place-items: center;
-  border-radius: 10px;
-  color: #111;
-  font-size: 20px;
-  font-weight: 700;
-}
-
-.workshop-label { background: #fcb97d; }
-
 .footer-cell {
   padding: 0;
   text-align: center;
@@ -328,6 +315,5 @@ p { line-height: normal; }
   .additional-label-cell { width: 34%; padding: 10px; }
   .additional-copy { width: 66%; padding: 10px; }
   .additional-logo { width: 82px; height: 82px; }
-  .additional-label { min-height: 64px; padding: 8px; font-size: 16px; }
   .ai-amio-dialog { width: 82vw; min-width: 0; max-width: 360px; }
 }
