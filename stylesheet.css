@@ -115,7 +115,7 @@ p { line-height: normal; }
   padding: 2.5%;
 }
 
-.intro-photo a {
+.intro-photo .profile-link {
   display: block;
   aspect-ratio: 1 / 1;
   overflow: hidden;
@@ -128,6 +128,16 @@ p { line-height: normal; }
   border-radius: 0;
   object-fit: cover;
   object-position: center;
+}
+
+.ai-amio-link {
+  margin: 8px 0 0;
+  text-align: center;
+}
+
+.ai-amio-link a {
+  font-size: 13px;
+  font-weight: 700;
 }
 
 .link-row { text-align: center; }
@@ -237,7 +247,7 @@ p { line-height: normal; }
   .intro-copy,
   .intro-photo { display: block; width: 100%; max-width: 100%; padding: 16px; }
   .intro-photo { text-align: center; }
-  .intro-photo a { max-width: 260px; margin: auto; }
+  .intro-photo .profile-link { max-width: 260px; margin: auto; }
   .project-copy { padding: 10px 16px; }
   .logo-cell { width: 32%; padding: 10px; }
   .education-copy { padding: 10px; }
