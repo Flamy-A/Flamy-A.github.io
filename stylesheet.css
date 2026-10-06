@@ -295,6 +295,10 @@ p { line-height: normal; }
   padding: 18px 16px;
   vertical-align: middle;
 }
+.news-copy .papertitle {
+  color: #1772d0;
+  font-weight: 400;
+}
 .news-table tr + tr .news-copy { padding-top: 24px; }
 
 .footer-cell {
