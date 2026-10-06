@@ -290,6 +290,13 @@ p { line-height: normal; }
   object-fit: contain;
 }
 
+.news-table { border-spacing: 0; }
+.news-copy {
+  padding: 18px 16px;
+  vertical-align: middle;
+}
+.news-table tr + tr .news-copy { padding-top: 24px; }
+
 .footer-cell {
   padding: 0;
   text-align: center;
@@ -319,5 +326,7 @@ p { line-height: normal; }
   .additional-label-cell { width: 34%; padding: 10px; }
   .additional-copy { width: 66%; padding: 10px; }
   .additional-logo { width: 82px; height: 82px; }
+  .news-copy { padding: 12px 16px; }
+  .news-table tr + tr .news-copy { padding-top: 18px; }
   .ai-amio-dialog { width: 82vw; min-width: 0; max-width: 360px; }
 }
